@@ -9,6 +9,6 @@ elif [ -f /etc/lsb-release ]; then
 apt-get update
 apt-get -y dist-upgrade
 fi
-./sentora_install.sh -t Europe/Paris -d $(hostname) -i public
+./sentora_install.sh -t Europe/Paris -d $(hostname --fqdn) -i public
 echo "OK"
 exit
